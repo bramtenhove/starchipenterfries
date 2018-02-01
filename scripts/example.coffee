@@ -11,7 +11,7 @@
 module.exports = (robot) ->
 
   robot.hear /badger/i, (res) ->
-    robot.logger.debug "Received message #{res.message.text}"
+    res.send "Yes, more badgers please!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
